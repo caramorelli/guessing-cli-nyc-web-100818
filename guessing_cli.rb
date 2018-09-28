@@ -11,7 +11,7 @@ def run_guessing_game
   puts "You guessed the correct number!" if won?(target_num, guess) == true
   if guess == 'exit'
     puts 'Goodbye!'
-    exit 
+    return 
   else 
     run_guessing_game
   end 
