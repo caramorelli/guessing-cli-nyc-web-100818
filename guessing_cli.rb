@@ -14,6 +14,7 @@ def run_guessing_game
     exit 
   else 
     run_guessing_game
+  end 
 end 
 
 def won?(target, guess)
