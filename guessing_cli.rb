@@ -9,7 +9,7 @@ def run_guessing_game
   guess = user_inputs
   puts 'The computer guessed ' + target_num.to_s + '.' if won?(target_num, guess) == false
   puts "You guessed the correct number!" if won?(target_num, guess) == true
-  puts 'Goodbye!' if 
+  if guess == 'exit'
 end 
 
 def won?(target, guess)
