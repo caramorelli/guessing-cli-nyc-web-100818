@@ -6,7 +6,7 @@
 
 def run_guessing_game
   target_num = rand(1..6)
-  until user_inputs == 'guess'
+  until user_inputs == 'exit'
     guess = user_inputs
     puts 'The computer guessed ' + target_num.to_s + '.' if won?(target_num, guess) == false
     puts "You guessed the correct number!" if won?(target_num, guess) == true
